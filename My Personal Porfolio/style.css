@@ -1,0 +1,516 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+/* End of Myers Reset  */
+/* Start of styling  */
+
+/* Entire Page Styling  */
+
+
+body{
+    box-sizing: inherit;
+}
+
+html{
+background-color: rgb(234, 207, 208);
+font-size: 62.5%;
+}
+
+p{
+    font-size: 1.7rem;
+}
+
+/* Heading on the top of the page with Name, Home Button and the nav bar  */
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 17rem;
+    font-family: 'Sacramento', cursive; 
+    margin-top: 5% ;
+    font-weight: bold;
+    text-shadow: rosybrown 12px 12px ;
+    margin-bottom: 5%;
+}
+
+img{
+    max-width:40%; 
+    min-width: 100px;
+    height: auto;
+}
+
+
+
+/* This is the navigation bar with links to other parts of the page */
+
+.header{
+    padding: 2%;
+    margin: 2px 2px;
+}
+
+nav{
+    background-color: white;
+    display:flex; 
+    flex-direction: row;
+    margin: 30% 40%;
+    font-size: 1rem;
+    box-shadow:lightgray 5px 5px;
+    margin-bottom: 90px;
+    padding: 90px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0% 0%;
+    text-decoration: none;
+    text-align: center; 
+
+}
+
+nav li{
+    text-align: center;
+    margin: 5px 150px;
+    padding: 1px 0px;
+    border: 21px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+nav ul{
+    display: flex;
+    margin: -23px 0px;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+nav li{
+    text-align: center;
+    margin: 5px 150px;
+    padding: 1px 0px;
+    border: 21px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5rem;
+    max-width: 100%;
+    
+}
+
+/* This is where the hoover commands over the nav bar are  */
+
+a:hover{
+    color:lightgray;
+}
+
+.header li:hover{
+    background:rgba(234, 207, 208,.2);
+    color: white;
+    font-size: 3rem;
+    border-radius: 5px; 
+    padding: 0px 20px;
+}
+
+
+
+
+
+
+
+/* This is where the main section of the page get styled  */
+
+main section{
+    margin: 30px 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+    box-shadow: lightgrey 39px 36px;
+}
+
+h2{
+    text-align:center; 
+    margin: 0px 37%; 
+    font-size: 1rem;
+    display: inline;
+}
+
+div img{
+    background-color: transparent;
+    border-left: rgb(234, 207, 208) solid 5px;
+    margin: 7px 23px;
+    padding: 0px 10px;
+}
+
+
+
+/* This is the styling of the Skills section of the page  */
+
+#skills img {
+    background-color: transparent;
+    border-left: rgb(234, 207, 208) solid 5px;
+    margin: 7px 23px;
+    padding: 0px 10px;
+}
+
+section{
+    margin: 1px 1px; 
+
+}
+
+#skills{
+    margin: 78px 70px;
+}
+
+h2{
+    font-size: 6rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-align: end;
+    margin: 25px 5px;
+    padding-bottom: 5px;
+}
+
+
+
+/* This is the portfolio section of the page */
+
+#portfolio h2{
+    font-size: 6rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-align: end;
+    margin: 0% 0%;
+    padding-left: 0%;
+}
+
+.Grid{
+    display: grid;
+    padding:27px 30px;
+    margin: 5% 5%;
+    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: minmax(200px, auto);
+    column-gap: 10px;
+    row-gap: 1em;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    margin: 60px 100px;   
+    font-size: 80px;
+    color: black;
+}
+
+.Grid p{ 
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    background-color:rgba(255, 255, 255, .6);
+    font-size: 20px; 
+}
+
+.gridSection:hover{
+    zoom: 120%;
+    display:block; 
+    font-size: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Images for the grids */
+/* Image for the 1st Grid section  */
+
+.grid-item1{
+    background-image:url("https://images.unsplash.com/photo-1549782680-6c0bc6c40c90?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=692&q=80");
+    background-size: 550px;
+    background-repeat: no-repeat;
+    border:lightgray 5px solid; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+   
+
+/* Image for the 2nd Grid section  */
+
+.grid-item2{
+    background-image:url("https://images.unsplash.com/photo-1560131930-485758fc17b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-size: 550px;
+    background-repeat: no-repeat;
+    border:lightgray 5px solid; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Image for the 3rd Grid section  */
+
+.grid-item3{
+    background-image:url("https://images.unsplash.com/photo-1597435877852-97c68cc4d8da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+    background-size: 550px;
+    background-repeat: no-repeat;
+    border:lightgray 5px solid; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* Image for Grid section 4 */
+
+.grid-item4{
+    background-image:url("https://images.unsplash.com/photo-1597435877852-97c68cc4d8da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+    background-size: 550px;
+    background-repeat: no-repeat;
+    border:lightgray 5px solid; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Image for Grid section 5 */
+
+.grid-item5{
+    background-image:url("https://images.unsplash.com/photo-1597435877852-97c68cc4d8da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+    background-size: 550px;
+    background-repeat: no-repeat;
+    border:lightgray 5px solid; 
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Image for Grid section 6 */
+
+.grid-item6{
+    background-image:url("https://images.unsplash.com/photo-1597435877852-97c68cc4d8da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+    background-size: 550px;
+    background-repeat: no-repeat;
+    border:lightgray 5px solid; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* Footer Section of the page  */
+
+footer{
+   margin-top: 170px;
+    
+}
+
+footer nav ul{
+    margin: -65px 210px;
+    width: 100%; 
+    
+}
+
+footer h2{
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-align: end;
+    margin: 25px 850px;
+    padding-bottom: 100px;
+    border-bottom: lightgray 2px solid;
+}
+
+footer nav{
+    margin: 0px 0px;
+    padding-bottom: 0px;
+    position: fixed;  
+    bottom: 0px;
+    width: 100%; 
+
+
+}
+
+
+html, body {
+    min-height: 100%
+}
+  
+  body {
+    padding-bottom: 88px;
+}
+  
+@media only screen and (max-width:1500px) and (min-width:850px){
+    
+    .Grid{
+        max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        /* margin: 2% -5%; */
+    }
+
+    .header{
+        padding: 2% 0%;
+        margin: 2px -26px;
+    }
+
+    footer nav ul {
+        margin: -59px 0px;
+    }
+
+    footer h2{
+        visibility: hidden;
+    }
+
+    nav li{
+        text-align: center;
+        margin: 10px 83px;
+        padding: 8px 3px;
+        border: 22px;
+        font-family: 'Amatic SC', cursive;
+        font-size: 2;
+        max-width: 100%;
+    }
+}
+
+/* @media only screen  and (min-device-width: 320px) 
+and (max-device-width: 850px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait)} */
+
+@media only screen  and (min-width: 320px) 
+and (max-width: 850px){
+
+    h1{
+        color: white;
+        font-size: 12rem;
+        font-family: 'Sacramento', cursive;
+        font-weight: bold;
+        text-shadow: rosybrown 12px 12px;
+        margin: 1rem -1rem;
+    }
+
+    .header{
+        padding: 8px;
+        margin: 9% 6%; 
+        width: 120% ;
+    }
+
+    header section{ 
+        margin: -7 -170; 
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin: 6rem -20rem;
+    }
+
+    nav ul {
+        display: block;
+        margin: 0% 10%;
+    }
+
+    /* main section  */
+    main{
+        width: 150%;
+    }
+
+    main section {
+        margin: -1% 6%;
+    }
+
+    #skills{
+        margin: 16% 7%;
+
+    }
+
+    /* mobile on the grid and portfolio */
+    .Grid{
+        display: block;
+        display: block;
+        margin: 2% -5%;
+        width: 100%;
+    }
+    #portfolio h2{
+        margin: -16% -21%;
+    }
+
+ 
+    /* mobile on the footer  */
+
+    footer nav { 
+        margin: 0px -74px;
+        padding: 5px 37px;
+
+    }
+
+    footer nav ul {
+        display: block;
+        margin: 0% 10%;
+    }
+
+    footer{ 
+        margin: -7 -140; 
+
+    }
+
+    footer h2{
+        margin: 2px 208px;
+    padding-bottom: 120px;
+    }
+        
+}    
+
+
+    
